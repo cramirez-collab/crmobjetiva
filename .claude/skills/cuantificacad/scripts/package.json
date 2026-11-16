@@ -1,0 +1,6 @@
+{
+  "name": "cuantificacad-tools",
+  "private": true,
+  "type": "module",
+  "dependencies": { "@mlightcad/libredwg-web": "0.9.0" }
+}

@@ -1,0 +1,67 @@
+No,Especialidad,Prefijo,Capa,Elemento,Geometria,Unidad,Medicion,Color_ACI
+01,Preliminares y trazo,01PRE,01PRE-TRAZO-M2,Trazo y nivelación,Polilínea cerrada,M2,Área,8
+01,Preliminares y trazo,01PRE,01PRE-LIMPIEZA-M2,Limpieza de terreno,Polilínea cerrada,M2,Área,8
+01,Preliminares y trazo,01PRE,01PRE-POLIGONO-ML,Poligonal del predio,Polilínea cerrada,ML,Perímetro,1
+02,Topografía,02TOP,02TOP-CURVAS-ML,Curvas de nivel,Polilínea abierta,ML,Longitud,9
+02,Topografía,02TOP,02TOP-PUNTOS-PZA,Puntos topográficos,Bloque,PZA,Conteo,9
+03,Excavación y movimiento de tierras,03EXC,03EXC-CORTE-M2,Huella de excavación por nivel,Polilínea cerrada,M2,Área x profundidad (atributo) = M3,30
+03,Excavación y movimiento de tierras,03EXC,03EXC-ANCLAS-PZA,Anclas / muro Milán,Bloque,PZA,Conteo,30
+04,Cimentación,04CIM,04CIM-PILAS-PZA,Pilas P-1 a P-3,Bloque,PZA,Conteo,5
+04,Cimentación,04CIM,04CIM-CONTRATRABE-ML,Contratrabes,Polilínea abierta (eje),ML,Longitud,5
+04,Cimentación,04CIM,04CIM-LOSA-M2,Losa de cimentación,Polilínea cerrada,M2,Área,5
+04,Cimentación,04CIM,04CIM-MURCONT-ML,Muros de contención MC,Polilínea abierta (eje),ML,Longitud x altura = M2,5
+05,Estructura de concreto,05EST,05EST-COLUMNA-PZA,Columnas C-1 a C-13,Bloque con atributo TIPO,PZA,Conteo por tipo,4
+05,Estructura de concreto,05EST,05EST-TRABE-ML,Trabes T-1 a T-81,Polilínea abierta (eje),ML,Longitud por tipo,4
+05,Estructura de concreto,05EST,05EST-LOSA-M2,Losas llenas y nervadas,Polilínea cerrada,M2,Área (huecos restados),4
+05,Estructura de concreto,05EST,05EST-NERVADURA-ML,Nervaduras N-1 a N-46,Polilínea abierta,ML,Longitud,4
+05,Estructura de concreto,05EST,05EST-MURO-ML,Muros de concreto M-1 a M-14,Polilínea abierta (eje),ML,Longitud x altura = M2,4
+05,Estructura de concreto,05EST,05EST-RAMPA-M2,Rampas y escaleras,Polilínea cerrada,M2,Área,4
+05,Estructura de concreto,05EST,05EST-EJES,Ejes estructurales,Línea,-,Referencia (no se mide),1
+06,Acero de refuerzo,06ACE,06ACE-ARMADO-ML,Varillas (por diámetro en atributo),Polilínea abierta,ML -> KG,Longitud x peso nominal,6
+07,Albañilería,07ALB,07ALB-MURO-BLOCK-ML,Muros de block,Polilínea abierta (eje),ML,Longitud x altura = M2,32
+07,Albañilería,07ALB,07ALB-MURO-TABLAROCA-ML,Muros de tablaroca,Polilínea abierta (eje),ML,Longitud x altura = M2,32
+07,Albañilería,07ALB,07ALB-FIRME-M2,Firmes y rellenos,Polilínea cerrada,M2,Área,32
+08,Arquitectura (planta),08ARQ,08ARQ-MUROS,Muros de diseño,Línea/Polilínea,-,Referencia,7
+08,Arquitectura (planta),08ARQ,08ARQ-AREAS-DEPTO-M2,Áreas vendibles por departamento,Polilínea cerrada,M2,Área,3
+08,Arquitectura (planta),08ARQ,08ARQ-AREAS-COMUN-M2,Áreas comunes,Polilínea cerrada,M2,Área,3
+08,Arquitectura (planta),08ARQ,08ARQ-COTAS,Cotas,Cota,-,Anotación,2
+08,Arquitectura (planta),08ARQ,08ARQ-TEXTO,Textos y nomenclatura,Texto,-,Anotación,2
+09,Acabados de piso,09PIS,09PIS-<CLAVE>-M2,Piso por clave de acabado,Polilínea cerrada,M2,Área,40
+10,Acabados de muro,10MUR,10MUR-<CLAVE>-ML,Recubrimiento de muro por clave,Polilínea abierta,ML x altura = M2,Longitud,50
+11,Plafones,11PLA,11PLA-<CLAVE>-M2,Plafón por clave,Polilínea cerrada,M2,Área,60
+12,Impermeabilización y azoteas,12IMP,12IMP-AZOTEA-M2,Impermeabilización,Polilínea cerrada,M2,Área,140
+13,Carpintería,13CAR,13CAR-PUERTA-PZA,Puertas P-01 a P-12,Bloque con atributo TIPO,PZA,Conteo,34
+13,Carpintería,13CAR,13CAR-CLOSET-ML,Closets y muebles,Polilínea abierta,ML,Longitud,34
+14,Herrería,14HER,14HER-BARANDAL-ML,Barandales,Polilínea abierta,ML,Longitud,250
+14,Herrería,14HER,14HER-REJA-ML,Rejas y mallas,Polilínea abierta,ML,Longitud,250
+15,Vidrio y aluminio,15VID,15VID-VENTANA-PZA,Ventanas y canceles,Bloque con atributo TIPO,PZA,Conteo,150
+15,Vidrio y aluminio,15VID,15VID-FACHADA-M2,Cancelería de fachada,Polilínea cerrada (en alzado),M2,Área,150
+16,Instalación hidráulica,16HID,16HID-TUBERIA-<DIAM>-ML,Tubería CPVC por diámetro (H.CPVC),Polilínea abierta,ML,Longitud,170
+16,Instalación hidráulica,16HID,16HID-CONEXION-PZA,Conexiones (H.ACC / H.HCO),Bloque,PZA,Conteo,170
+16,Instalación hidráulica,16HID,16HID-EQUIPO-PZA,Equipos de bombeo y cisterna,Bloque,PZA,Conteo,170
+17,Instalación sanitaria,17SAN,17SAN-TUBERIA-<DIAM>-ML,Tubería PVC sanitario (S.SAN),Polilínea abierta,ML,Longitud,30
+17,Instalación sanitaria,17SAN,17SAN-CONEXION-PZA,Codos / yees / tees,Bloque,PZA,Conteo,30
+17,Instalación sanitaria,17SAN,17SAN-REGISTRO-PZA,Registros y coladeras (S.REJ),Bloque,PZA,Conteo,30
+17,Instalación sanitaria,17SAN,17SAN-SOPORTE-PZA,Soportería (S.SOP),Bloque,PZA,Conteo,30
+18,Instalación pluvial,18PLU,18PLU-TUBERIA-<DIAM>-ML,Tubería pluvial (PL.SAN),Polilínea abierta,ML,Longitud,140
+18,Instalación pluvial,18PLU,18PLU-BAP-PZA,Bajadas y coladeras pluviales (PL.AES),Bloque,PZA,Conteo,140
+19,Instalación de gas,19GAS,19GAS-TUBERIA-<DIAM>-ML,Tubería de gas (G.GAL / G.PAP),Polilínea abierta,ML,Longitud,50
+19,Instalación de gas,19GAS,19GAS-ACCESORIO-PZA,Válvulas y accesorios (G.ACC),Bloque,PZA,Conteo,50
+20,Protección contra incendio,20PCI,20PCI-TUBERIA-<DIAM>-ML,Red de PCI,Polilínea abierta,ML,Longitud,10
+20,Protección contra incendio,20PCI,20PCI-ROCIADOR-PZA,Rociadores,Bloque,PZA,Conteo,10
+20,Protección contra incendio,20PCI,20PCI-GABINETE-PZA,Gabinetes y extintores,Bloque,PZA,Conteo,10
+21,Eléctrica y media tensión,21ELE,21ELE-CANALIZACION-<DIAM>-ML,Tubería conduit,Polilínea abierta,ML,Longitud,2
+21,Eléctrica y media tensión,21ELE,21ELE-CHAROLA-ML,Charolas,Polilínea abierta,ML,Longitud,2
+21,Eléctrica y media tensión,21ELE,21ELE-CONTACTO-PZA,Contactos,Bloque,PZA,Conteo,2
+21,Eléctrica y media tensión,21ELE,21ELE-LUMINARIA-PZA,Luminarias,Bloque,PZA,Conteo,2
+21,Eléctrica y media tensión,21ELE,21ELE-TABLERO-PZA,Tableros y subestación,Bloque,PZA,Conteo,2
+22,HVAC y extracción,22HVA,22HVA-DUCTO-M2,Ducto (área de lámina),Polilínea abierta + atributo sección,ML -> M2,Longitud x perímetro de sección,130
+22,HVAC y extracción,22HVA,22HVA-DIFUSOR-PZA,Difusores y rejillas,Bloque,PZA,Conteo,130
+22,HVAC y extracción,22HVA,22HVA-EQUIPO-PZA,Equipos y extractores,Bloque,PZA,Conteo,130
+23,Instalaciones especiales,23ESP,23ESP-VOZDATOS-ML,Canalización voz y datos / CCTV,Polilínea abierta,ML,Longitud,200
+23,Instalaciones especiales,23ESP,23ESP-SALIDA-PZA,Salidas especiales,Bloque,PZA,Conteo,200
+24,Elevadores,24ELV,24ELV-CUBO-PZA,Elevadores y eleva-autos,Bloque,PZA,Conteo,220
+25,Muebles y equipos,25MUE,25MUE-SANITARIO-PZA,Muebles sanitarios,Bloque,PZA,Conteo,90
+25,Muebles y equipos,25MUE,25MUE-COCINA-PZA,Equipos de cocina,Bloque,PZA,Conteo,90
+00,Generales,00GEN,00GEN-MARCO,Marco y solapa Objetiva,Bloque,-,No se mide,8
+00,Generales,00GEN,00GEN-VIEWPORT,Ventanas de presentación,Viewport,-,No imprimible,8
